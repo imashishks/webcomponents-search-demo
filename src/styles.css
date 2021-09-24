@@ -1,0 +1,14 @@
+body {
+  font-family: sans-serif;
+  background-color: #ebebeb;
+  margin: 0;
+  padding: 0;
+}
+#app{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+:root {
+  --main-bg-color: brown;
+}
