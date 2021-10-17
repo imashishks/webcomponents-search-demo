@@ -1,6 +1,5 @@
 class Fetch{
     async get(url,params){
-        console.log("loading");
         const loader = document.createElement("app-loader");
         document.body.appendChild(loader);
         const {queryparams} = params;

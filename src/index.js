@@ -8,8 +8,8 @@ class App {
 
         const app = document.querySelector("#app");
         const inputE = document.createElement("app-inputheader");
-        inputE.addEventListener("inputE",async function(event){
-            console.log(event);
+        inputE.addEventListener("inputChanged",async function(event){
+           
             app.innerHTML="";
             const response = await fetch.get(POST_URL,{
                 queryparams : {
