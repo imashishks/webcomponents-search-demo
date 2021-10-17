@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  background-color: #ebebeb;
+  background-color: var(--main-bg-color);
   margin: 0;
   padding: 0;
 }
@@ -10,5 +10,5 @@ body {
 }
 
 :root {
-  --main-bg-color: brown;
+  --main-bg-color: #ebebeb;
 }

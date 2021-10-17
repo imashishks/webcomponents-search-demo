@@ -1,7 +1,10 @@
+import style from './input.css' assert {type: 'css'};
 class InputHeader extends HTMLElement{
     constructor(){
         super();
+      
         this.attachShadow({mode:"open"});
+        this.shadowRoot.adoptedStyleSheets = [style];
         this.render();
     }
     connectedCallback(){

@@ -1,0 +1,9 @@
+.input-header{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-header input{
+    padding: 10px 15px;
+}
