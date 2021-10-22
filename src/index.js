@@ -18,17 +18,19 @@ class App {
             });
             response.results.forEach(post=>{
                 const appCard = document.createElement("app-card");
-                appCard.setAttribute("header",post.name );
-                appCard.setAttribute("description",post.status );
+                appCard.innerHTML = `
+                    <h1 slot="card-header" class="header"> ${post.name}</h1>
+                    <span slot="card-description" class="header"> ${post.status}</span>
+                `;
                 app.appendChild(appCard);
+                appCard.addEventListener("cardClicked", (event)=>{
+                    alert(event.detail);
+                });
             })
             document.body.appendChild(app);
         });
         document.body.appendChild(inputE);
-      
     }
-    //Input 
-
 }
 
 const app = new App();

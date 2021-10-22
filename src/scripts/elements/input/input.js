@@ -16,7 +16,7 @@ class InputHeader extends HTMLElement {
             this.dispatchEvent(new CustomEvent("inputChanged", {
                 detail: input.value
             }));
-        }, 1000);
+        }, 300);
         input.addEventListener ("input", debouncedInputChange);
     }
 
